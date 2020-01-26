@@ -1,18 +1,19 @@
 *{box-sizing: border-box;}
 
 body{
-	background-color: #FFF;
-	margin: auto;
-	font-size: 2em;
 	display: grid;
-	text-align: center;
-	min-height: 140vh;
-	height: auto;
+  margin: 3em auto;
+  background-color: #FFF;
+	font-size: 2em;
+  text-align: center;
+	min-height: 50vh;
 }
 
-svg
+.logo
 {
-	margin: 4em auto;
+	margin: auto;
+	width: auto;
+	max-width: 60vw;
 }
 
 img

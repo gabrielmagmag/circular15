@@ -2,65 +2,57 @@
 
 body{
   margin: auto;
-  background-color: #FFF;
+  background-color: #fff;
 	font-size: 2em;
   text-align: center;
 	min-height: 100vh;
 	
 	display: grid;
-	
 	grid-template-columns: auto;
-	grid-template-rows: auto 66vh auto auto auto;
-	grid-template-areas:
-		"header"
-		"logo"
-		"marquee"
-		"foto"
-		"texto"
-		"texto"
-		;
-
-}
-
-.logo
-{
-	margin: auto;
-	width: auto;
-	max-width: 48vw;
+	grid-template-rows: auto auto auto 100vh;
 }
 
 img
 {
 	width: 100%;
-	max-width: 100%;
-	margin: auto;
 }
 
-marquee
+.cabecalho
+{
+	display: grid;
+	grid-template-rows: 2fr 1fr auto; 
+	overflow: hidden;
+}
+
+.cabecalho img
+{
+	margin: auto;
+	width: auto;
+}
+
+.cabecalho p
 {
 	font-family: 'Bungee', cursive;
-	font-size: 0.8em;
+	font-size: 1em;
 	width: 100%;
-	transform: rotate(-05deg);
 	overflow: hidden;
-	white-space: nowrap;
-	margin: auto;
-	margin-bottom: 0.6em;
+	transform: scale(1.3) rotate(-5deg);
+	margin: 1.5em auto;
 }
 
-p{
+.signature {
 	font-family: Trattatello;
-  font-size: 30px;
+  font-size: 24px;
+	line-height: 28px; 
   color: #080189;
+	padding: 2em;
 }
 
 footer
 {
-		font-size: 14px;
+  font-size: 14px;
 	line-height: 1.4em;
-	  font-family: sans-serif;
-	 text-align: right;
-	padding: 1em 2em;
+  font-family: sans-serif;
 }
 footer ul
 {

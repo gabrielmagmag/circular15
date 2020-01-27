@@ -1,19 +1,32 @@
 *{box-sizing: border-box;}
 
 body{
-	display: grid;
-  margin: 3em auto;
+  margin: auto;
   background-color: #FFF;
 	font-size: 2em;
   text-align: center;
-	min-height: 50vh;
+	min-height: 100vh;
+	
+	display: grid;
+	
+	grid-template-columns: auto;
+	grid-template-rows: auto 66vh auto auto auto;
+	grid-template-areas:
+		"header"
+		"logo"
+		"marquee"
+		"foto"
+		"texto"
+		"texto"
+		;
+
 }
 
 .logo
 {
 	margin: auto;
 	width: auto;
-	max-width: 60vw;
+	max-width: 48vw;
 }
 
 img
@@ -23,7 +36,39 @@ img
 	margin: auto;
 }
 
-.100
+marquee
 {
+	font-family: 'Bungee', cursive;
+	font-size: 0.8em;
 	width: 100%;
+	transform: rotate(-05deg);
+	overflow: hidden;
+	white-space: nowrap;
+	margin: auto;
+	margin-bottom: 0.6em;
+}
+
+p{
+	font-family: Trattatello;
+  font-size: 30px;
+  color: #080189;
+}
+
+footer
+{
+		font-size: 14px;
+	line-height: 1.4em;
+	  font-family: sans-serif;
+	 text-align: right;
+	padding: 1em 2em;
+}
+footer ul
+{
+  padding: 0;
+	list-style: none;
+}
+
+footer span{
+	font-weight: bolder;
+	color: #A0A0A0;
 }

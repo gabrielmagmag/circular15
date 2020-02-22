@@ -2,15 +2,11 @@
 
 body{
   margin: auto;
-  padding: 2em;
-  font-size: 1.6em;
-  background-color: #fff;
-  text-align: center;
-  min-height: 100vh;
-	
+  background-color: #fff;	
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: minmax(300px,auto) auto auto 100vh;
+  grid-template-rows: auto auto auto auto;
+  padding: 2em 2em 8em 2em;
 }
 
 img
@@ -18,22 +14,15 @@ img
 	width: 100%;
 }
 
-.cabecalho
+header
 {
 	display: grid;
 	grid-template-rows: auto auto auto; 
 	overflow: hidden;
 }
 
-.cabecalho img
-{
-	margin: 2em auto;
-	width: auto;
-	max-width:220px;
-	height: auto;
-}
 
-.cabecalho p
+header p
 {
 	font-family: 'Bungee', cursive;
 	font-size: 1em;
@@ -43,60 +32,32 @@ img
 	margin: 1.5em auto;
 }
 
-.signature {
-	font-family: Trattatello;
-  font-size: 24px;
-	line-height: 28px; 
-  color: #080189;
-	padding: 2em;
+ul
+{
+padding: 0;
+list-style: none;
 }
 
-footer
+li
 {
-  font-size: 14px;
-	line-height: 1.4em;
-  font-family: sans-serif;
-}
-footer ul
-{
-  padding: 0;
-	list-style: none;
+	line-height: 24px;
 }
 
 footer span{
 	font-weight: bolder;
 	color: #A0A0A0;
+	width: 100px;
+	display: inline-block;
 }
 
-
-.asmaispedidas
+.tagline
 {
-	text-align:left;
-	
+	font-size: 1.75em;
+	padding: 60px;
+	max-width: 600px;
+	font-style: italic;
+	text-align: center;
 }
-
-.asmaispedidas ul li
-{
-	font-size: 0.5em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
